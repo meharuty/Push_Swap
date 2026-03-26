@@ -8,7 +8,7 @@ int main (int argc ,char **argv)
 
     arr = finished_array(argc, argv);
     
-    arr_int(arr);
+    arr_int_to_lst(arr);
 
     return 0;
 }
