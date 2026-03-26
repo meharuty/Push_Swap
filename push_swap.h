@@ -9,6 +9,11 @@
 #include <unistd.h>
 #include  "./libft/libft.h"
 
+typedef struct m_list
+{
+	int	value;
+	struct m_list	*next;
+} n_list;
 
 typedef struct s_stack
 {
@@ -26,5 +31,6 @@ void free_all(char **ptr);
 int check_one_arg (char *ptr);
 int	*arr_int(char *p);
 int *parse_args(char **arr, int *size);
+n_list *array_to_list(int *arr, int size);
 
 #endif
